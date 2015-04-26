@@ -70,7 +70,17 @@ A. Finding Large Itemsets:
 	This is used to find large itemsets that are above the specified minimum support in an iterative fashion.
 
 	For this we have the following functions:
+	1. load_transactions: 
+		This function not only loads the transactions in-memory for faster access but at the same time finds the first frequent itemsets i.e. L1. It uses correct_first_itemset to complete the job. The itemsets are stored as a set.
+	2. get_itemsets:
+		This function iteratively generates itemsets which have support greater than minimum support. For the generation of candidate itemsets we have joined the previous k-1 itemsets iteratively. We keep joining elements of the previous k-1 itemsets which are above the minimum support, till we encounter an itemset of size k. This is a faster method of generating the itemsets as in python sets allow us to check if a set is sub-set of another, this leads to optimizations in the processing time.
 
+B. Rule Generation:
+	This is used to find the rules which are above the specified minimum confidence.
+
+	For this we use the following function:
+	get_rules:
+		This function iterates over the frequent itemsets and without going through the transactions again, only using the support values of the itemsets finds the confidence value of each itemset. All those itemsets that exceed the minimum confidence value are formatted in the required format and added to a list for display later.
 
 
 
