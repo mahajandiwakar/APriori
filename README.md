@@ -15,6 +15,7 @@ src/apriori.py        - A python implementation of Apriori Algorithm
 run.sh                - script for running the application
 data/data.csv         - Dataset in csv format
 README.txt            - This File
+example-run.txt       - Example run file
 
 
 DESCRIPTIONS:
