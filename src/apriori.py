@@ -16,15 +16,16 @@ class APRIORI():
 
     def load_transactions(self, csv_file):
         first_itemsets = defaultdict()
-        for line in open(csv_file, 'r'):
-            t = line.strip().split(',')
-            self.transactions.append(set(t))
-            for item in t:
-                item_set = frozenset([item])
-                if item_set not in first_itemsets:
-                    first_itemsets[item_set]=1
-                else:
-                    first_itemsets[item_set]+=1
+        for readline in open(csv_file, 'r'):
+            for line in readline.split('\r'):
+                t = line.strip().split(',')
+                self.transactions.append(set(t))
+                for item in t:
+                    item_set = frozenset([item])
+                    if item_set not in first_itemsets:
+                        first_itemsets[item_set]=1
+                    else:
+                        first_itemsets[item_set]+=1
         self.itemsets.append(first_itemsets)
         self.correct_first_itemset()
 
