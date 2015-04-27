@@ -1,0 +1,346 @@
+==Frequent itemsets (min_sup=15%)
+[male], 93%
+[frisked], 66%
+[male, frisked], 63%
+[MEDIUM], 53%
+[BLACK], 53%
+[young adult], 52%
+[MEDIUM, male], 50%
+[BLACK, male], 50%
+[male, young adult], 49%
+[average], 47%
+[male, average], 44%
+[BLACK, frisked], 37%
+[young adult, frisked], 36%
+[BLACK, male, frisked], 36%
+[THIN], 36%
+[MEDIUM, frisked], 35%
+[male, young adult, frisked], 35%
+[MEDIUM, frisked, male], 34%
+[middle aged], 33%
+[THIN, male], 33%
+[frisked, average], 32%
+[night], 31%
+[male, middle aged], 30%
+[frisked, average, male], 30%
+[BROOKLYN], 29%
+[QUEENS], 29%
+[male, night], 29%
+[MEDIUM, young adult], 28%
+[MEDIUM, BLACK], 28%
+[male, QUEENS], 28%
+[BLACK, young adult], 28%
+[CPW], 27%
+[short], 27%
+[BROOKLYN, male], 27%
+[MEDIUM, average], 27%
+[male, young adult, MEDIUM], 27%
+[MEDIUM, male, BLACK], 26%
+[male, young adult, BLACK], 26%
+[male, CPW], 26%
+[MEDIUM, male, average], 25%
+[young adult, average], 25%
+[force used], 25%
+[CPW, frisked], 25%
+[BLACK, average], 25%
+[group], 25%
+[short, male], 25%
+[male, CPW, frisked], 24%
+[THIN, frisked], 24%
+[male, young adult, average], 24%
+[male, force used], 24%
+[male, average, BLACK], 24%
+[THIN, frisked, male], 23%
+[late night], 23%
+[male, group], 23%
+[frisked, force used], 23%
+[male, force used, frisked], 22%
+[tall], 22%
+[frisked, night], 21%
+[male, late night], 21%
+[WHITE-HISPANIC], 21%
+[male, night, frisked], 20%
+[male, tall], 20%
+[BLACK, young adult, frisked], 20%
+[frisked, middle aged], 20%
+[evening], 20%
+[male, WHITE-HISPANIC], 20%
+[BROOKLYN, frisked], 20%
+[MEDIUM, frisked, young adult], 20%
+[BLACK, male, frisked, young adult], 20%
+[BROOKLYN, BLACK], 19%
+[THIN, BLACK], 19%
+[MEDIUM, frisked, BLACK], 19%
+[THIN, young adult], 19%
+[QUEENS, frisked], 19%
+[MEDIUM, middle aged], 19%
+[MEDIUM, frisked, young adult, male], 19%
+[frisked, middle aged, male], 19%
+[BROOKLYN, frisked, male], 19%
+[BLACK, male, frisked, MEDIUM], 19%
+[QUEENS, frisked, male], 19%
+[evening, male], 18%
+[BLACK, male, THIN], 18%
+[BLACK, male, BROOKLYN], 18%
+[male, young adult, THIN], 18%
+[MEDIUM, middle aged, male], 18%
+[frisked, average, young adult], 18%
+[MEDIUM, frisked, average], 18%
+[frisked, average, BLACK], 18%
+[BLACK, night], 18%
+[short, frisked], 18%
+[MEDIUM, QUEENS], 18%
+[young adult, night], 17%
+[BLACK, CPW], 17%
+[frisked, average, young adult, male], 17%
+[MEDIUM, male, average, frisked], 17%
+[BLACK, male, frisked, average], 17%
+[frisked, group], 17%
+[short, frisked, male], 17%
+[MEDIUM, male, QUEENS], 17%
+[afternoon], 17%
+[BLACK, CPW, male], 17%
+[BLACK, middle aged], 17%
+[male, night, BLACK], 17%
+[young adult, QUEENS], 16%
+[male, young adult, night], 16%
+[male, group, frisked], 16%
+[BLACK, CPW, frisked], 16%
+[searched], 16%
+[late night, frisked], 16%
+[MEDIUM, night], 16%
+[MANHATTAN], 16%
+[BLACK, male, frisked, CPW], 16%
+[male, young adult, QUEENS], 16%
+[male, afternoon], 16%
+[young adult, CPW], 16%
+[THIN, average], 16%
+[male, middle aged, BLACK], 15%
+[middle aged, average], 15%
+[MEDIUM, BROOKLYN], 15%
+[male, late night, frisked], 15%
+[arrested], 15%
+==High-confidence association rules (min_conf=50%)
+[BLACK,[CPW,frisked] => [male](Conf: 98%, Supp:16%)
+[BLACK,CPW] => [male](Conf: 97%, Supp:17%)
+[QUEENS,frisked] => [male](Conf: 97%, Supp:19%)
+[BLACK,[young adult,frisked] => [male](Conf: 97%, Supp:20%)
+[frisked,[average,BLACK] => [male](Conf: 97%, Supp:18%)
+[MEDIUM,[frisked,BLACK] => [male](Conf: 97%, Supp:19%)
+[frisked,[average,young adult] => [male](Conf: 97%, Supp:18%)
+[MEDIUM,[frisked,average] => [male](Conf: 97%, Supp:18%)
+[MEDIUM,[frisked,young adult] => [male](Conf: 96%, Supp:20%)
+[CPW,frisked] => [male](Conf: 96%, Supp:25%)
+[BLACK,frisked] => [male](Conf: 96%, Supp:37%)
+[MEDIUM,frisked] => [male](Conf: 96%, Supp:35%)
+[MEDIUM,QUEENS] => [male](Conf: 96%, Supp:18%)
+[frisked,average] => [male](Conf: 96%, Supp:32%)
+[young adult,frisked] => [male](Conf: 96%, Supp:36%)
+[short,frisked] => [male](Conf: 96%, Supp:18%)
+[CPW] => [male](Conf: 96%, Supp:27%)
+[young adult,QUEENS] => [male](Conf: 96%, Supp:16%)
+[frisked] => [male](Conf: 96%, Supp:66%)
+[frisked,night] => [male](Conf: 96%, Supp:21%)
+[late night,frisked] => [male](Conf: 95%, Supp:16%)
+[frisked,force used] => [male](Conf: 95%, Supp:23%)
+[THIN,frisked] => [male](Conf: 95%, Supp:24%)
+[BROOKLYN,frisked] => [male](Conf: 95%, Supp:20%)
+[QUEENS] => [male](Conf: 95%, Supp:29%)
+[frisked,middle aged] => [male](Conf: 95%, Supp:20%)
+[MEDIUM,young adult] => [male](Conf: 95%, Supp:28%)
+[BLACK,young adult] => [male](Conf: 95%, Supp:28%)
+[young adult,average] => [male](Conf: 95%, Supp:25%)
+[tall] => [male](Conf: 95%, Supp:22%)
+[MEDIUM,BLACK] => [male](Conf: 95%, Supp:28%)
+[MEDIUM,average] => [male](Conf: 95%, Supp:27%)
+[BLACK,average] => [male](Conf: 94%, Supp:25%)
+[frisked,group] => [male](Conf: 94%, Supp:17%)
+[force used] => [male](Conf: 94%, Supp:25%)
+[BLACK] => [male](Conf: 94%, Supp:53%)
+[THIN,BLACK] => [male](Conf: 94%, Supp:19%)
+[MEDIUM] => [male](Conf: 94%, Supp:53%)
+[young adult] => [male](Conf: 94%, Supp:52%)
+[BROOKLYN,BLACK] => [male](Conf: 94%, Supp:19%)
+[average] => [male](Conf: 94%, Supp:47%)
+[BLACK,[CPW,male] => [frisked](Conf: 94%, Supp:17%)
+[BLACK,night] => [male](Conf: 94%, Supp:18%)
+[late night] => [male](Conf: 93%, Supp:23%)
+[young adult,night] => [male](Conf: 93%, Supp:17%)
+[male,CPW] => [frisked](Conf: 93%, Supp:26%)
+[MEDIUM,middle aged] => [male](Conf: 93%, Supp:19%)
+[afternoon] => [male](Conf: 93%, Supp:17%)
+[BLACK,CPW] => [frisked](Conf: 93%, Supp:17%)
+[THIN,young adult] => [male](Conf: 93%, Supp:19%)
+[WHITE-HISPANIC] => [male](Conf: 93%, Supp:21%)
+[evening] => [male](Conf: 93%, Supp:20%)
+[CPW] => [frisked](Conf: 93%, Supp:27%)
+[BLACK,middle aged] => [male](Conf: 93%, Supp:17%)
+[night] => [male](Conf: 93%, Supp:31%)
+[BROOKLYN] => [male](Conf: 92%, Supp:29%)
+[short] => [male](Conf: 92%, Supp:27%)
+[THIN] => [male](Conf: 92%, Supp:36%)
+[middle aged] => [male](Conf: 92%, Supp:33%)
+[group] => [male](Conf: 91%, Supp:25%)
+[male,force used] => [frisked](Conf: 91%, Supp:24%)
+[BLACK,CPW] => [male,frisked](Conf: 91%, Supp:17%)
+[force used] => [frisked](Conf: 90%, Supp:25%)
+[CPW] => [male,frisked](Conf: 89%, Supp:27%)
+[force used] => [male,frisked](Conf: 86%, Supp:25%)
+[male,[young adult,BLACK] => [frisked](Conf: 75%, Supp:26%)
+[BLACK,young adult] => [frisked](Conf: 73%, Supp:28%)
+[male,[average,BLACK] => [frisked](Conf: 72%, Supp:24%)
+[male,[young adult,average] => [frisked](Conf: 72%, Supp:24%)
+[BLACK,male] => [frisked](Conf: 72%, Supp:50%)
+[male,young adult] => [frisked](Conf: 71%, Supp:49%)
+[male,night] => [frisked](Conf: 71%, Supp:29%)
+[MEDIUM,[male,BLACK] => [frisked](Conf: 71%, Supp:26%)
+[BLACK,young adult] => [male,frisked](Conf: 71%, Supp:28%)
+[male,late night] => [frisked](Conf: 71%, Supp:21%)
+[male,group] => [frisked](Conf: 71%, Supp:23%)
+[male,[young adult,MEDIUM] => [frisked](Conf: 71%, Supp:27%)
+[BLACK,average] => [frisked](Conf: 71%, Supp:25%)
+[young adult,average] => [frisked](Conf: 71%, Supp:25%)
+[THIN,male] => [frisked](Conf: 70%, Supp:33%)
+[BLACK] => [frisked](Conf: 70%, Supp:53%)
+[MEDIUM,BLACK] => [frisked](Conf: 70%, Supp:28%)
+[MEDIUM,young adult] => [frisked](Conf: 70%, Supp:28%)
+[young adult] => [frisked](Conf: 70%, Supp:52%)
+[late night] => [frisked](Conf: 70%, Supp:23%)
+[BROOKLYN,male] => [frisked](Conf: 69%, Supp:27%)
+[night] => [frisked](Conf: 69%, Supp:31%)
+[group] => [frisked](Conf: 69%, Supp:25%)
+[male,average] => [frisked](Conf: 69%, Supp:44%)
+[BLACK,average] => [male,frisked](Conf: 68%, Supp:25%)
+[male] => [frisked](Conf: 68%, Supp:93%)
+[young adult,average] => [frisked,male](Conf: 68%, Supp:25%)
+[THIN] => [frisked](Conf: 68%, Supp:36%)
+[MEDIUM,[male,average] => [frisked](Conf: 68%, Supp:25%)
+[short,male] => [frisked](Conf: 68%, Supp:25%)
+[BROOKLYN] => [frisked](Conf: 67%, Supp:29%)
+[male,QUEENS] => [frisked](Conf: 67%, Supp:28%)
+[MEDIUM,BLACK] => [male,frisked](Conf: 67%, Supp:28%)
+[BROOKLYN,male] => [BLACK](Conf: 67%, Supp:27%)
+[BLACK] => [male,frisked](Conf: 67%, Supp:53%)
+[MEDIUM,young adult] => [frisked,male](Conf: 67%, Supp:28%)
+[MEDIUM,male] => [frisked](Conf: 67%, Supp:50%)
+[average] => [frisked](Conf: 67%, Supp:47%)
+[young adult] => [male,frisked](Conf: 67%, Supp:52%)
+[BROOKLYN] => [BLACK](Conf: 66%, Supp:29%)
+[late night] => [male,frisked](Conf: 66%, Supp:23%)
+[QUEENS] => [frisked](Conf: 66%, Supp:29%)
+[MEDIUM,average] => [frisked](Conf: 66%, Supp:27%)
+[night] => [male,frisked](Conf: 66%, Supp:31%)
+[MEDIUM] => [frisked](Conf: 65%, Supp:53%)
+[short] => [frisked](Conf: 65%, Supp:27%)
+[group] => [male,frisked](Conf: 65%, Supp:25%)
+[THIN] => [frisked,male](Conf: 65%, Supp:36%)
+[male,[CPW,frisked] => [BLACK](Conf: 65%, Supp:24%)
+[male,CPW] => [BLACK](Conf: 64%, Supp:26%)
+[average] => [frisked,male](Conf: 64%, Supp:47%)
+[BROOKLYN] => [frisked,male](Conf: 64%, Supp:29%)
+[QUEENS] => [frisked,male](Conf: 64%, Supp:29%)
+[MEDIUM,average] => [male,frisked](Conf: 64%, Supp:27%)
+[CPW,frisked] => [BLACK](Conf: 64%, Supp:25%)
+[CPW] => [BLACK](Conf: 64%, Supp:27%)
+[MEDIUM] => [frisked,male](Conf: 63%, Supp:53%)
+[short] => [frisked,male](Conf: 62%, Supp:27%)
+[BROOKLYN] => [BLACK,male](Conf: 62%, Supp:29%)
+[CPW,frisked] => [BLACK,male](Conf: 62%, Supp:25%)
+[male,middle aged] => [frisked](Conf: 62%, Supp:30%)
+[CPW] => [BLACK,male](Conf: 62%, Supp:27%)
+[male,QUEENS] => [MEDIUM](Conf: 61%, Supp:28%)
+[QUEENS] => [MEDIUM](Conf: 60%, Supp:29%)
+[male,CPW] => [BLACK,frisked](Conf: 60%, Supp:26%)
+[middle aged] => [frisked](Conf: 60%, Supp:33%)
+[CPW] => [BLACK,frisked](Conf: 59%, Supp:27%)
+[male,middle aged] => [MEDIUM](Conf: 59%, Supp:30%)
+[middle aged] => [MEDIUM](Conf: 58%, Supp:33%)
+[QUEENS] => [MEDIUM,male](Conf: 58%, Supp:29%)
+[CPW] => [BLACK,[male,frisked](Conf: 58%, Supp:27%)
+[male,average] => [MEDIUM](Conf: 58%, Supp:44%)
+[male,night] => [BLACK](Conf: 58%, Supp:29%)
+[CPW] => [young adult](Conf: 57%, Supp:27%)
+[middle aged] => [frisked,male](Conf: 57%, Supp:33%)
+[average] => [MEDIUM](Conf: 57%, Supp:47%)
+[night] => [BLACK](Conf: 57%, Supp:31%)
+[frisked,[average,male] => [young adult](Conf: 57%, Supp:30%)
+[frisked,[average,male] => [MEDIUM](Conf: 57%, Supp:30%)
+[frisked,[average,male] => [BLACK](Conf: 57%, Supp:30%)
+[frisked,average] => [young adult](Conf: 57%, Supp:32%)
+[male,QUEENS] => [young adult](Conf: 57%, Supp:28%)
+[frisked,average] => [MEDIUM](Conf: 57%, Supp:32%)
+[male,frisked] => [BLACK](Conf: 56%, Supp:63%)
+[male,night] => [young adult](Conf: 56%, Supp:29%)
+[MEDIUM,[frisked,male] => [young adult](Conf: 56%, Supp:34%)
+[QUEENS] => [young adult](Conf: 56%, Supp:29%)
+[frisked,average] => [BLACK](Conf: 56%, Supp:32%)
+[MEDIUM,frisked] => [young adult](Conf: 56%, Supp:35%)
+[male,[young adult,frisked] => [BLACK](Conf: 56%, Supp:35%)
+[frisked] => [BLACK](Conf: 56%, Supp:66%)
+[night] => [young adult](Conf: 56%, Supp:31%)
+[MEDIUM,[frisked,male] => [BLACK](Conf: 56%, Supp:34%)
+[young adult,frisked] => [BLACK](Conf: 56%, Supp:36%)
+[THIN,male] => [BLACK](Conf: 56%, Supp:33%)
+[MEDIUM,frisked] => [BLACK](Conf: 55%, Supp:35%)
+[male,frisked] => [young adult](Conf: 55%, Supp:63%)
+[THIN,male] => [young adult](Conf: 55%, Supp:33%)
+[frisked] => [young adult](Conf: 55%, Supp:66%)
+[BLACK,[male,frisked] => [young adult](Conf: 55%, Supp:36%)
+[frisked,average] => [young adult,male](Conf: 55%, Supp:32%)
+[THIN] => [BLACK](Conf: 55%, Supp:36%)
+[frisked,average] => [MEDIUM,male](Conf: 55%, Supp:32%)
+[male,young adult] => [MEDIUM](Conf: 55%, Supp:49%)
+[BLACK,frisked] => [young adult](Conf: 55%, Supp:37%)
+[THIN] => [young adult](Conf: 54%, Supp:36%)
+[frisked,average] => [BLACK,male](Conf: 54%, Supp:32%)
+[male,average] => [young adult](Conf: 54%, Supp:44%)
+[middle aged] => [MEDIUM,male](Conf: 54%, Supp:33%)
+[male,[young adult,frisked] => [MEDIUM](Conf: 54%, Supp:35%)
+[MEDIUM,frisked] => [young adult,male](Conf: 54%, Supp:35%)
+[average] => [MEDIUM,male](Conf: 54%, Supp:47%)
+[male] => [MEDIUM](Conf: 54%, Supp:93%)
+[frisked] => [BLACK,male](Conf: 54%, Supp:66%)
+[young adult,frisked] => [MEDIUM](Conf: 54%, Supp:36%)
+[young adult] => [MEDIUM](Conf: 54%, Supp:52%)
+[QUEENS] => [male,young adult](Conf: 54%, Supp:29%)
+[young adult,frisked] => [BLACK,male](Conf: 54%, Supp:36%)
+[male] => [BLACK](Conf: 54%, Supp:93%)
+[male,average] => [BLACK](Conf: 54%, Supp:44%)
+[average] => [young adult](Conf: 54%, Supp:47%)
+[MEDIUM,frisked] => [BLACK,male](Conf: 54%, Supp:35%)
+[male,young adult] => [BLACK](Conf: 53%, Supp:49%)
+[night] => [male,BLACK](Conf: 53%, Supp:31%)
+[average] => [BLACK](Conf: 53%, Supp:47%)
+[MEDIUM,male] => [young adult](Conf: 53%, Supp:50%)
+[male,frisked] => [MEDIUM](Conf: 53%, Supp:63%)
+[MEDIUM] => [young adult](Conf: 53%, Supp:53%)
+[BLACK,frisked] => [male,young adult](Conf: 53%, Supp:37%)
+[young adult] => [BLACK](Conf: 53%, Supp:52%)
+[frisked] => [MEDIUM](Conf: 53%, Supp:66%)
+[male] => [young adult](Conf: 53%, Supp:93%)
+[frisked] => [male,young adult](Conf: 53%, Supp:66%)
+[BLACK,male] => [MEDIUM](Conf: 53%, Supp:50%)
+[MEDIUM,male] => [BLACK](Conf: 52%, Supp:50%)
+[BLACK,male] => [young adult](Conf: 52%, Supp:50%)
+[BLACK,[male,frisked] => [MEDIUM](Conf: 52%, Supp:36%)
+[night] => [male,young adult](Conf: 52%, Supp:31%)
+[BROOKLYN] => [MEDIUM](Conf: 52%, Supp:29%)
+[BLACK] => [MEDIUM](Conf: 52%, Supp:53%)
+[BLACK,frisked] => [MEDIUM](Conf: 52%, Supp:37%)
+[young adult,frisked] => [MEDIUM,male](Conf: 52%, Supp:36%)
+[MEDIUM] => [BLACK](Conf: 52%, Supp:53%)
+[BLACK] => [young adult](Conf: 52%, Supp:53%)
+[MEDIUM,[frisked,male] => [average](Conf: 51%, Supp:34%)
+[THIN] => [BLACK,male](Conf: 51%, Supp:36%)
+[night] => [MEDIUM](Conf: 51%, Supp:31%)
+[MEDIUM,frisked] => [average](Conf: 51%, Supp:35%)
+[young adult] => [male,MEDIUM](Conf: 51%, Supp:52%)
+[MEDIUM,male] => [average](Conf: 51%, Supp:50%)
+[male,middle aged] => [BLACK](Conf: 51%, Supp:30%)
+[average] => [male,young adult](Conf: 51%, Supp:47%)
+[THIN] => [male,young adult](Conf: 51%, Supp:36%)
+[frisked] => [MEDIUM,male](Conf: 51%, Supp:66%)
+[middle aged] => [BLACK](Conf: 51%, Supp:33%)
+[MEDIUM] => [average](Conf: 50%, Supp:53%)
+[BLACK,frisked] => [male,MEDIUM](Conf: 50%, Supp:37%)
+[average] => [male,BLACK](Conf: 50%, Supp:47%)
