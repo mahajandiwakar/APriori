@@ -88,10 +88,10 @@ class APRIORI():
                         line = "[" + ", ".join(list(left_items)) + "] => [" + item + "] (Conf: "+str(conf * 100) + "%, Supp: " + str ((itemsets[itemset] * 100)) + "%)"
                         self.rules[line] = conf
 
-    def __key_itemset(self, t):
+    def get_itemset_val(self, t):
         return self.itemsets[len(t) - 1][t]
 
-    def __key_rule(self, t):
+    def get_rule_val(self, t):
         return self.rules[t]
 
     def print_result(self, file):
@@ -100,13 +100,13 @@ class APRIORI():
         all_itemsets = []
         for itemsets in self.itemsets:
             all_itemsets+=itemsets
-        ordered_itemsets = sorted(all_itemsets, key =self.__key_itemset, reverse = True)
+        ordered_itemsets = sorted(all_itemsets, key =self.get_itemset_val, reverse = True)
         for itemset in ordered_itemsets:
             rules_writer.write(str(list(itemset)))
             rules_writer.write(', ' + str(self.itemsets[len(itemset)-1][itemset]*100) + '%')
             rules_writer.write('\n')
         rules_writer.write('\n==High-confidence association rules (min_conf='+str(self.minconf*100)+'%)\n')
-        rules_ordered = sorted(self.rules.keys(), key = self.__key_rule, reverse = True)
+        rules_ordered = sorted(self.rules.keys(), key = self.get_rule_val, reverse = True)
         for rules in rules_ordered:
             rules_writer.write(rules)
             rules_writer.write('\n')
