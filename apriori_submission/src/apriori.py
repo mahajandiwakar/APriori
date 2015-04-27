@@ -1,12 +1,14 @@
 #!/usr/bin/env python
+from _ast import operator
 
 import sys
 from collections import defaultdict
 import decimal
+import operator
 
 
 class APRIORI():
-
+# initializing datastructures for transactions, itemsets and rules
     def __init__(self, minsupp, minconf):
         self.transactions=[]
         self.minsupp = float(minsupp)
@@ -14,8 +16,9 @@ class APRIORI():
         self.itemsets = []
         self.rules ={}
 
+#loads the csv file and proceeds to generate the first itemsets
     def load_transactions(self, csv_file):
-        first_itemsets = defaultdict()
+        first_itemsets = dict()
         for readline in open(csv_file, 'r'):
             for line in readline.split('\r'):
                 t = line.strip().split(',')
@@ -29,6 +32,7 @@ class APRIORI():
         self.itemsets.append(first_itemsets)
         self.correct_first_itemset()
 
+#removes the itemsets below the given support value
     def correct_first_itemset(self):
         num_of_transactions  = len(self.transactions)
         first_itemset = self.itemsets[0]
@@ -40,13 +44,13 @@ class APRIORI():
                 first_itemset[item] = support_value
         self.itemsets[0] = first_itemset
 
-
+#iteratively adds itemsets using the previous itemsets
     def get_itemsets(self):
         prev_itemset = self.itemsets[0].keys()
         num_of_transactions = len(self.transactions)
         while len(prev_itemset) is not 0:
             new_set_len = len(prev_itemset[0])+1
-            candidate_itemsets = defaultdict()
+            candidate_itemsets = dict()
             for i in range(0, len(prev_itemset)):
                 for j in range(i+1, len(prev_itemset)):
                     present_set = prev_itemset[i] | prev_itemset[j]
@@ -57,7 +61,7 @@ class APRIORI():
                                 count += 1
                         if count == len(present_set):
                             candidate_itemsets[present_set] = 0
-
+#after the combinations of next possible itemsets have been generated we find each of there's support values.
             if len(candidate_itemsets) is not 0:
                 for t in self.transactions:
                     for itemset in candidate_itemsets:
@@ -73,6 +77,7 @@ class APRIORI():
                 self.itemsets.append(candidate_itemsets)
             prev_itemset = candidate_itemsets.keys()
 
+#function generates rules and checks for minimum confidence values
     def get_rules(self):
         self.get_itemsets()
         for itemsets in self.itemsets[1:]:
@@ -86,16 +91,29 @@ class APRIORI():
                         line = "[" + ", ".join(list(left_items)) + "] => [" + item + "] (Conf: "+str(conf * 100) + "%, Supp: " + str ((itemsets[itemset] * 100)) + "%)"
                         self.rules[line] = conf
 
+# for getting itemset confidence values
+    def get_itemset_val(self, t):
+        return self.itemsets[len(t) - 1][t]
+
+# for getting the rule values
+    def get_rule_val(self, t):
+        return self.rules[t]
+
+# for printing the required file
     def print_result(self, file):
         rules_writer = open(file, 'w')
         rules_writer.write('==Frequent itemsets (min_sup='+str(self.minsupp*100)+'%)\n')
+        all_itemsets = []
         for itemsets in self.itemsets:
-            for itemset in itemsets.keys():
-                rules_writer.write(str(list(itemset)))
-                rules_writer.write(', ' + str(itemsets[itemset]*100) + '%')
-                rules_writer.write('\n')
+            all_itemsets+=itemsets
+        ordered_itemsets = sorted(all_itemsets, key =self.get_itemset_val, reverse = True)
+        for itemset in ordered_itemsets:
+            rules_writer.write(str(list(itemset)))
+            rules_writer.write(', ' + str(self.itemsets[len(itemset)-1][itemset]*100) + '%')
+            rules_writer.write('\n')
         rules_writer.write('\n==High-confidence association rules (min_conf='+str(self.minconf*100)+'%)\n')
-        for rules in self.rules:
+        rules_ordered = sorted(self.rules.keys(), key = self.get_rule_val, reverse = True)
+        for rules in rules_ordered:
             rules_writer.write(rules)
             rules_writer.write('\n')
         rules_writer.close()
